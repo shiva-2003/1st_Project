@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    margin: 0px;
+
+}
+
+header{
+    background-color: rgb(48, 45, 45);
+    display: flex;  
+    align-items: center;
+    padding: 17px 0px;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header a{
+    color: white;
+}
+#menu li{
+    padding: 10px;
+}
+#social-links li {
+    padding: 10px;   
+}
+
+#main{
+    display: flex;
+}
+
+article{
+    padding: 15px;
+}
+
+aside{
+    flex: 0 0 20vw;
+    background-color: aliceblue;
+}
+
+aside ul{
+    list-style: none;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+aside ul a {
+    color: black;
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid ;
+}
+
+aside img{
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.skill_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#skill_items{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(247, 245, 245);
+    
+    padding: 10px 10px 30px;
+    flex-basis: 50%;
+    max-width: 350px;
+}
+#skill_items img{
+    width: 100%;
+}
+#skill_items h3{
+    margin: 7px 0px 10px;
+}
+#skill_items p{
+    margin: 0px 0px 10px;
+}
+.click_to_act{
+    margin-top: auto;
+}
+.click_to_act a{
+    background-color: #c5c1c1;
+    border: 2px solid transparent;
+    padding: 8px 15px;
+    display: block;
+}
+.click_to_act a:hover{
+    color: grey;
+    background-color: transparent;
+    border: 2px solid #c5c1c1;
+}
+
+footer{
+    background-color: rgb(48, 45, 45);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width:720px) {
+    aside{
+        flex: 0 0 180px;
+    }
+    #sill_items{        
+        flex-basis: 30%;
+        
+    }
+    .skill_container{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    } 
+    #logo{
+        order: -1;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        order: 1;
+    }
+    .skill_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #skill_items{
+        margin: 5px;
+    }
+}
